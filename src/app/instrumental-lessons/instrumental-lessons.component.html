@@ -1,33 +1,37 @@
-<div class = "fullwidth">
-    <table class="selection">
-      <tr>
-      <th *ngFor="let Page of pages" (click)="onSelect(Page)"
-          [class.selected]="Page === selectedPage"
-          (click)="onSelect(Page)">
-        <span [class.selected]="Page === selectedPage">{{Page.name}}</span>
-        <th>
-    </tr>
-    </table>
-</div>
-<div *ngIf="selectedPage">
-    <div class = "MainBody">
+<div class = "flew-column">
+  <div class = "flex-row">
+
+
+
+      <div *ngFor="let Page of pages" (click)="onSelect(Page)"
+      [class.selected]="Page === selectedPage"
+      (click)="onSelect(Page)">
+      
+              <div class="underlined-heading-wrapper">
+                <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
+
+              </div>
+      </div>
+
+  </div>
+<div class = "flex-row">
+  <div *ngIf="selectedPage">
+    <div>
     
       <app-testimonials *ngIf="selectedPage.name === 'Testimonials'"></app-testimonials>
-
+      <app-instrumental-lessons-home *ngIf="selectedPage.name === 'Home'"></app-instrumental-lessons-home>
     
     </div>
     </div>
     
 
 <div *ngIf="!selectedPage">
-<h1>Instrumental Lessons</h1>
+  <app-instrumental-lessons-home></app-instrumental-lessons-home>
 
-<p> Alexandra has a PGCE in primary education and several years of experience teaching across the curriculum in schools. She is DBS checked. "INSERT REST HERE - BIO"
-</p>
-
-
-<a href="mailto:aske19vington@gmail.com?Subject=Instrumental Lessons" target="_top">Drop me an email</a>
 </div>
+
+</div>
+
 
 
 

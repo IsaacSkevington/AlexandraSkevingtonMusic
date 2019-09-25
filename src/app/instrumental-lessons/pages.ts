@@ -1,6 +1,7 @@
 import { Page } from './page';
 
 export const PAGES: Page[] = [
-  {name: 'Testimonials', location: './testimonials'},
+  {name: 'Home', location: '../instrumental-lessons-home'},
+  {name: 'Testimonials', location: '../testimonials'},
 
 ];

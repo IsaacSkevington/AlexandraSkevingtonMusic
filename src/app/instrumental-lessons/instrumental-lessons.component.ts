@@ -12,13 +12,13 @@ export class InstrumentalLessonsComponent implements OnInit {
   title = "Alex's Music Website";
   pages = PAGES;
   selectedpage: Page; 
+  selectedPage =  this.pages[0]
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  selectedPage: Page;
   onSelect(page: Page): void {
     this.selectedPage = page;
 }

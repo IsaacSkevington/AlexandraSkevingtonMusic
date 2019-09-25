@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Page } from './page';
-import { PAGES } from './pages';
+import { PAGES, STARTPAGE } from './pages';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +8,22 @@ import { PAGES } from './pages';
   styleUrls: ['./app.component.css']
 })
 
+
 export class AppComponent {
-  title = "Alex's Music Website";
+  title = "Alexandra Skevington Music";
   pages = PAGES;
-  selectedpage: Page; 
+  selectedPage =  this.pages[0];
+  
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  selectedPage: Page;
-  onSelect(page: Page): void {
+  onSelect(page: Page): void{
     this.selectedPage = page;
+    
+  }
 }
-}
+
+

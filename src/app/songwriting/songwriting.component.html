@@ -1,10 +1,36 @@
-<h1>Songwriting</h1>
-
-<p> Alexandra has a PGCE in primary education and several years of experience teaching across the curriculum in schools. She is DBS checked. "INSERT REST HERE - BIO"
-</p>
+<div class = "flew-column">
+  <div class = "flex-row">
 
 
-<a href="mailto:aske19vington@gmail.com?Subject=Songwriting" target="_top">Drop me an email</a>
+
+      <div *ngFor="let Page of pages" (click)="onSelect(Page)"
+      [class.selected]="Page === selectedPage"
+      (click)="onSelect(Page)">
+      
+              <div class="underlined-heading-wrapper">
+                <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
+
+              </div>
+      </div>
+
+  </div>
+<div class = "flex-row">
+  <div *ngIf="selectedPage">
+    <div>
+    
+      <app-songwriting-askevington *ngIf="selectedPage.name === 'Aske Vington'"></app-songwriting-askevington>
+      <app-songwriting-redasruby *ngIf="selectedPage.name === 'Red As Ruby'"></app-songwriting-redasruby>
+    
+    </div>
+    </div>
+    
+
+<div *ngIf="!selectedPage">
+  <app-songwriting-home-page></app-songwriting-home-page>
+
+</div>
+
+</div>
 
 
 

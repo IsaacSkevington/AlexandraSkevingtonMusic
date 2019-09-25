@@ -8,6 +8,13 @@ import { PianoAccompanimentComponent } from './piano-accompaniment/piano-accompa
 import { SongwritingComponent } from './songwriting/songwriting.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { TestimonialsComponent} from './testimonials/testimonials.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { PianoAccompanimentHomeComponent } from './piano-accompaniment-home/piano-accompaniment-home.component';
+import { InstrumentalLessonsHomeComponent } from './instrumental-lessons-home/instrumental-lessons-home.component';
+import { ComposingComponent } from './composing/composing.component';
+import { SongwritingHomePageComponent } from './songwriting-home-page/songwriting-home-page.component';
+import { SongwritingRedasrubyComponent } from './songwriting-redasruby/songwriting-redasruby.component';
+import { SongwritingAskevingtonComponent } from './songwriting-askevington/songwriting-askevington.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +23,18 @@ import { TestimonialsComponent} from './testimonials/testimonials.component';
     TestimonialsComponent,
     PianoAccompanimentComponent,
     SongwritingComponent,
-    HomePageComponent
+    HomePageComponent,
+    PricingComponent,
+    PianoAccompanimentHomeComponent,
+    InstrumentalLessonsHomeComponent,
+    ComposingComponent,
+    SongwritingHomePageComponent,
+    SongwritingRedasrubyComponent,
+    SongwritingAskevingtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

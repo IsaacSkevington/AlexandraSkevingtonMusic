@@ -1,20 +1,22 @@
-<div class = "fullwidth"> 
-<h1 class = "header">{{title}}</h1>
-</div>
 
-<div class = "fullwidth">
-<table class="selection">
-  <tr>
-  <th *ngFor="let Page of pages" (click)="onSelect(Page)"
+<div class = "flew-column">
+  <div class = "flex-row">
+
+
+
+      <div *ngFor="let Page of pages" (click)="onSelect(Page)"
       [class.selected]="Page === selectedPage"
       (click)="onSelect(Page)">
-    <span [class.selected]="Page === selectedPage">{{Page.name}}</span>
-    <th>
-</tr>
-</table>
-</div>
-<div *ngIf="selectedPage">
-<div class = "MainBody">
+      
+              <div class="underlined-heading-wrapper">
+                <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
+
+              </div>
+      </div>
+
+  </div>
+<div class = "flex-row">
+<div *ngIf="selectedPage" class = "MainBody">
 
   <app-home-page *ngIf="selectedPage.name === 'Home Page'"></app-home-page>
   <app-instrumental-lessons *ngIf="selectedPage.name === 'Instrumental Lessons'"></app-instrumental-lessons>
@@ -24,4 +26,6 @@
 
 
 </div>
+</div>
+
 </div>
