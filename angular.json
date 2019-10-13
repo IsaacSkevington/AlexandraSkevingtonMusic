@@ -14,17 +14,17 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/mums-music-website",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
+            "index": "./src/index.html",
+            "main": "./src/main.ts",
+            "polyfills": "./src/polyfills.ts",
+            "tsConfig": "./tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "./src/favicon.ico",
+              "./src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "./src/styles.css"
             ],
             "scripts": []
           },
@@ -118,8 +118,13 @@
               "devServerTarget": "mums-music-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "mums-music-website"
 }

@@ -1,0 +1,29 @@
+h2{
+  font-size: 1.4vw;
+  text-align: right;
+}
+h3{
+  font-size: 1.2vw;
+  text-align: right;
+}
+
+p{
+  font-size: 1vw;
+  text-align: right;
+}
+
+@font-face {
+font-family: "BerlinSans";
+src: url("./../../assets/Fonts/BRLNSR.TTF");
+font-style: normal;
+font-weight: 600
+}
+div.BerlinSans{
+font-family: "BerlinSans";
+}
+
+div.image{
+  display: flex;
+  justify-content: right;
+  width:100%;
+}

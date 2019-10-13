@@ -1,0 +1,36 @@
+<div class = "flew-column">
+        <div class = "flex-row">
+      
+      
+      
+            <div *ngFor="let Page of pages" (click)="onSelect(Page)"
+            [class.selected]="Page === selectedPage"
+            (click)="onSelect(Page)">
+            
+                    <div class="underlined-heading-wrapper">
+                      <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
+      
+                    </div>
+            </div>
+      
+        </div>
+      <div class = "flex-rowmenu" *ngIf="selectedPage">
+          
+            <app-songwriting-redasruby class = "flex-column" *ngIf="selectedPage.name === 'Red As Ruby'"></app-songwriting-redasruby>
+            <app-composing class = "flex-column" *ngIf="selectedPage.name === 'Composing'"></app-composing>
+            <app-songwriting-askevington class = "flex-column" *ngIf="selectedPage.name === 'Aske Vington'"></app-songwriting-askevington>
+            <app-writing-home-page class = "flex-column" *ngIf="selectedPage.name === 'Background'"></app-writing-home-page>
+    
+          
+      
+      <div *ngIf="!selectedPage">
+        <app-songwriting-home-page class = "flex-column"></app-songwriting-home-page>
+      
+      </div>
+      
+      </div>
+      
+      
+      
+      
+      

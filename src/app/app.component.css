@@ -1,7 +1,15 @@
-div.fullwidth{
+div.body{
+  position: fixed;
+  padding:0;
+  left:0;
+  top:0;
   width: 100%;
-}
+  height: 100%;
+  background: linear-gradient(white 0%, rgb(104, 104, 104) 100%);
+  overflow: auto
 
+}
+/* colour for later #dccf39*/
 
 div.selection{
       width:100%;
@@ -47,8 +55,8 @@ body {
 
 
 div.MainBody{
-  width: 50%;
-  background-color: white;
+  width: 100%;
+  background-color:transparent;
   padding: 0%;
   margin: 0px;
   text-align: center;
@@ -63,11 +71,22 @@ div{
 
 
 
+
 @font-face {
   font-family: "Lovelo";
   src: url("../assets/Fonts/lovelo_black-webfont.woff2") format("woff2");
   font-style: normal;
   font-weight: 600
+}
+
+@font-face {
+  font-family: "BerlinSans";
+  src: url("../assets/Fonts/BRLNSR.TTF");
+  font-style: normal;
+  font-weight: 600
+}
+div.Euclid{
+  font-family: "BerlinSans";
 }
 
 .flex-row {
@@ -77,7 +96,19 @@ div{
   justify-content: space-around;
   align-items: baseline;
   padding-top: 2.5%
+  
 }
+.flex-rowmenu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom:0%;
+  align-self: center
+}
+
 
 .flex-column{
   display: flex;
@@ -86,6 +117,73 @@ div{
   justify-content: space-around;
   
 }
+div.flex-rowmain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+div.flex-columnleft{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: left;
+  padding: 0.5%
+  
+}
+
+div.flex-columnmiddle{
+  display: flex;
+  justify-content: center;
+  flex-basis: 70%;
+}
+
+div.flex-columnright{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: right;
+  align-items: right;
+  padding: 0.5%
+}
+
+div.flex-columntopleft{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: center;
+  padding: 0.5%
+  
+}
+
+div.flex-columntopmiddle{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 70%;
+}
+
+div.flex-columntopright{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: right;
+  padding: 0.5%;
+}
+div.flex-rowbottom{
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1%;
+  padding-bottom:0%;
+  align-self: center
+}
+
+div.flexcolumnbottomenu{
+
+}
+
 
 span.selected {
  border-bottom: 2px solid black;
@@ -100,7 +198,7 @@ span.selected {
 	position: relative;
 	color:black;
 	text-decoration: none;
-	font-size: 1.5vw;
+	font-size: 1vw;
   display:inline-block;
 }
 
@@ -113,7 +211,8 @@ span.selected {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	bottom: 0;
+  
+  bottom: 0;
 	left: 0;
 	background-color:black;
   visibility: hidden;
@@ -133,4 +232,33 @@ span.selected {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   transform: scaleX(1);
+}
+h2{
+  font-size: 1vw;
+}
+
+
+div.sociallink{
+  padding:10px
+}
+
+a.bottommenulink{
+  color: black;
+  text-decoration: none;
+  font-size: 0.9vw;
+
+}
+
+div.copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  text-align: right;
+  position: absolute;
+  left: 80%;
+  bottom: 2px;
+  font-size: 0.8vw;
+  color: darkgray;  
+  font-family: "Berlin-sans";
 }

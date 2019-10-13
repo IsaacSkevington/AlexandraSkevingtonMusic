@@ -72,3 +72,13 @@ div.fullwidth{
     left: 25%;
     bottom: 100%;
       }    
+
+      @font-face {
+        font-family: "BerlinSans";
+        src: url("./../../assets/Fonts/BRLNSR.TTF");
+        font-style: normal;
+        font-weight: 600
+      }
+      div.BerlinSans{
+        font-family: "BerlinSans";
+      }

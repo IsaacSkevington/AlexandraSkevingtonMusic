@@ -15,6 +15,11 @@ import { ComposingComponent } from './composing/composing.component';
 import { SongwritingHomePageComponent } from './songwriting-home-page/songwriting-home-page.component';
 import { SongwritingRedasrubyComponent } from './songwriting-redasruby/songwriting-redasruby.component';
 import { SongwritingAskevingtonComponent } from './songwriting-askevington/songwriting-askevington.component';
+import { SideleftComponent } from './sideleft/sideleft.component';
+import { SiderightComponent } from './sideright/sideright.component';
+import { WritingComponent } from './writing/writing.component';
+import { WritingHomePageComponent } from './writing-home-page/writing-home-page.component';
+import { BandComponent } from './band/band.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +35,12 @@ import { SongwritingAskevingtonComponent } from './songwriting-askevington/songw
     ComposingComponent,
     SongwritingHomePageComponent,
     SongwritingRedasrubyComponent,
-    SongwritingAskevingtonComponent
+    SongwritingAskevingtonComponent,
+    SideleftComponent,
+    SiderightComponent,
+    WritingComponent,
+    WritingHomePageComponent,
+    BandComponent
   ],
   imports: [
     BrowserModule,

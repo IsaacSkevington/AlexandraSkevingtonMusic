@@ -2,3 +2,12 @@ h1{
     text-align: center;
     size: 40px
 }
+@font-face {
+    font-family: "BerlinSans";
+    src: url("./../../assets/Fonts/BRLNSR.TTF");
+    font-style: normal;
+    font-weight: 600
+  }
+  div.BerlinSans{
+    font-family: "BerlinSans";
+  }

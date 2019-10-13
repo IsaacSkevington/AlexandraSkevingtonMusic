@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Page } from './page';
 import { PAGES } from './pages';
+import { PRICES } from './prices';
 
 
 @Component({
@@ -13,6 +14,7 @@ export class PianoAccompanimentComponent implements OnInit {
   pages = PAGES;
   selectedpage: Page;
   selectedPage =  this.pages[0] 
+  prices = PRICES;
 
   constructor() { }
 

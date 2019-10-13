@@ -1,0 +1,12 @@
+<div class = "BerlinSans">
+<h2>
+        Upcoming Events
+</h2>
+
+<div *ngFor="let item of CalendarItems">
+                <a href= {{item.link}}>
+                <p>{{item.title}} {{item.description}}</p> 
+                <div class = "image"><img src = {{item.imagesrc}} alt = {{item.imagealttext}} [style.height.px]=item.imageheight [style.width.px]=item.imagewidth></div>
+                </a>
+</div>
+</div>

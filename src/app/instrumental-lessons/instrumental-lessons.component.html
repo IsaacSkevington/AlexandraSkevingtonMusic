@@ -1,25 +1,11 @@
-<div class = "flew-column">
-  <div class = "flex-row">
-
-
-
-      <div *ngFor="let Page of pages" (click)="onSelect(Page)"
-      [class.selected]="Page === selectedPage"
-      (click)="onSelect(Page)">
-      
-              <div class="underlined-heading-wrapper">
-                <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
-
-              </div>
-      </div>
-
-  </div>
+<div class = "flex-column">
+  
 <div class = "flex-row">
   <div *ngIf="selectedPage">
     <div>
     
-      <app-testimonials *ngIf="selectedPage.name === 'Testimonials'"></app-testimonials>
-      <app-instrumental-lessons-home *ngIf="selectedPage.name === 'Home'"></app-instrumental-lessons-home>
+      <app-testimonials style="width:100%" *ngIf="selectedPage.name === 'Testimonials'"></app-testimonials>
+      <app-instrumental-lessons-home *ngIf="selectedPage.name === 'My Teaching'"></app-instrumental-lessons-home>
     
     </div>
     </div>
@@ -32,6 +18,21 @@
 
 </div>
 
+
+
+<div class = "flex-row2">
+    <div *ngFor="let Page of pages" (click)="onSelect(Page)"
+    [class.selected]="Page === selectedPage"
+    (click)="onSelect(Page)">
+    
+            <div class="underlined-heading-wrapper">
+              <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.display}}</span></span>
+
+            </div>
+    </div>
+
+</div>
+</div>
 
 
 

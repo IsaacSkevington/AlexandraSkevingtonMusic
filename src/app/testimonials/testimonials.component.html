@@ -1,11 +1,5 @@
-<h1>Testimonials</h1>
-
-<p> Alexandra has a PGCE in primary education and several years of experience teaching across the curriculum in schools. She is DBS checked. "INSERT REST HERE - BIO"
-</p>
-
-
-<a href="mailto:aske19vington@gmail.com?Subject=Instrumental Lessons" target="_top">Drop me an email</a>
-
-
-
-
+<div class = "BerlinSans">
+<div class="testimonial" *ngFor="let Testimonial of Testimonials">
+    <p>{{Testimonial.person}} ({{Testimonial.instrument}}) - "{{Testimonial.body}}" </p>
+</div>
+</div>

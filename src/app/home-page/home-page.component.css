@@ -1,65 +1,119 @@
 div.fullwidth{
-    width: 100%;
-  }
-  
-  table.selection{
-        border: 0px ;
-        width:100%;
-        text-align: center;
-        color:#159989 ;
-        font-size: 14px;
-        border: 15px solid green;
-        padding: 1.5%;
-        margin: 0px;
-        position: relative;
-        left: 0%;
-        bottom: 100%;
-        background-color: black;
-        }
-      
-  h1.header{
-      background-color: blue;
+  width: 100%;
+}
+
+table.selection{
+      border: 0px ;
+      width:50%;
+      text-align: center;
+      color:#159989 ;
+      font-size: 14px;
       border: 15px solid green;
       padding: 1.5%;
       margin: 0px;
-      text-align: center;
       position: relative;
-      left: 0%;
+      left: 25%;
       bottom: 100%;
+      background-color: black;
       }
-      
-  h1{
+    
+h1.header{
+    background-color: blue;
+    border: 15px solid green;
+    padding: 0%;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    left: 0%;
+    bottom: 100%;
+    }
+    
+h1{
+    border: 0px ;
+    text-align: center ;
+    color: black ;
+    font-size: 40px;
+    }
+    h1.title{
       border: 0px ;
       text-align: center ;
-      color:white ;
-      font-size: 40px;
+      color:black;
+      font-size: 6vw;
+      -webkit-text-stroke: 2px white;
       }
+      h1.titleA{
+        border: 0px ;
+        text-align: center ;
+        color:black;
+        font-size: 8vw;
+        -webkit-text-stroke: 2px white;
+        }
   
-  body {
-       background-color: red;
-       width: 100%;
-       height: 100%;
-       font-family: "Sitka Small", Times, serif;
-       font-weight: 400;
-       line-height: 0px;
-       }
-  
-  th:hover {
-    color:red;
-    background-color: #DDD;
-    text-decoration-color: red
-  }
-  span:hover{ 
-    color: red;
-    background-color: #DDD;
-  }
-  th.selected {
-    background-color: white;
-    color: black;
-  }
-  th.selected:hover {
-    background-color:white;
-    color:red;
-  }
-  
-       
+
+body {
+     background-color: red;
+     width: 100%;
+     height: 100%;
+     font-family: "Sitka Small", Times, serif;
+     font-weight: 400;
+     line-height: 0px;
+     }
+
+th:hover {
+  color:red;
+  background-color: #DDD;
+  text-decoration-color: red
+}
+span:hover{ 
+  color: red;
+  background-color: #DDD;
+}
+th.selected {
+  background-color: white;
+  color: black;
+}
+th.selected:hover {
+  background-color:white;
+  color:red;
+}
+
+div.MainBody{
+  width: 50%;
+  background-color: white;
+  padding: 0%;
+  margin: 0px;
+  text-align: center;
+  position: relative;
+  left: 25%;
+  bottom: 100%;
+    }    
+
+
+
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    
+
+    @font-face {
+      font-family: "BerlinSans";
+      src: url("./../../assets/Fonts/BRLNSR.TTF");
+      font-style: normal;
+      font-weight: 600
+    }
+    div.BerlinSans{
+      font-family: "BerlinSans";
+    }
+    

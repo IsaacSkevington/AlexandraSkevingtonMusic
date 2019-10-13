@@ -1,31 +1,70 @@
 
-<div class = "flew-column">
-  <div class = "flex-row">
+<div class = body>
+<div class = "flex-column">
+  
 
+    <div class = "flex-rowmenu">
 
+      <div class = flex-columntopleft>
+      <img src="./assets/logo.jpg" style = "height: 100px; width:100px">
 
+      </div>
+
+      <div class = flex-columntopmiddle>
       <div *ngFor="let Page of pages" (click)="onSelect(Page)"
       [class.selected]="Page === selectedPage"
       (click)="onSelect(Page)">
-      
               <div class="underlined-heading-wrapper">
                 <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
 
-              </div>
+              </div>     
       </div>
+      </div>
+    <div class= flex-columntopright>
+      <div *ngFor="let TopRightMenuItem of TopRightMenuItems">
+            <div class=sociallink><a href={{TopRightMenuItem.link}} title={{TopRightMenuItem.title}}><i><img src={{TopRightMenuItem.image}} style="height:20px; width:20px"></i></a></div>
+      </div>
+      </div>
+</div>
+         
 
-  </div>
-<div class = "flex-row">
+
+
+ <div class = "flex-rowmain">
+
+
+
+        <div class = "flex-columnleft">
+                <app-sideleft></app-sideleft>
+        </div>
+<div class = "flex-columnmiddle">
 <div *ngIf="selectedPage" class = "MainBody">
-
   <app-home-page *ngIf="selectedPage.name === 'Home Page'"></app-home-page>
   <app-instrumental-lessons *ngIf="selectedPage.name === 'Instrumental Lessons'"></app-instrumental-lessons>
-  <app-songwriting *ngIf="selectedPage.name === 'Songwriting'"></app-songwriting>
-  <app-piano-accompaniment *ngIf="selectedPage.name === 'Piano Accompaniments'"></app-piano-accompaniment>
-
-
-
-</div>
+  <app-writing *ngIf="selectedPage.name === 'Writing'"></app-writing>
+  <app-piano-accompaniment *ngIf="selectedPage.name === 'Piano Accompaniment'"></app-piano-accompaniment>
+  <app-band *ngIf="selectedPage.name === 'Jazz Band Outreach'"></app-band>
 </div>
 
 </div>
+<div class = "flex-columnright">
+  <app-sideright></app-sideright>
+</div>
+</div>
+</div>
+
+<div class="flex-rowbottom">
+    <div *ngFor="let BottomMenuItem of BottomMenuItems" >
+                  <div class="underlined-heading-wrapper">
+              <span class="underlined-heading"> <span [class.selected]="BottomMenuItem === selectedItem"><a class="bottommenulink" href={{BottomMenuItem.link}}>{{BottomMenuItem.name}}</a></span></span>
+
+            </div>     
+    </div>
+  
+  </div>
+<div class="copyright">
+    © 2019 Alexandra Skevington
+    <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/work/m65x7JnGomRP77xx"><img alt="Copyright" width="100" height="20" src="https://static.copyrighted.com/badges/125x25/01_1.png" /></a>
+</div>
+</div>
+

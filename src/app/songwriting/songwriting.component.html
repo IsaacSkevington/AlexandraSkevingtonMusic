@@ -16,12 +16,11 @@
   </div>
 <div class = "flex-row">
   <div *ngIf="selectedPage">
-    <div>
-    
+
+      <app-songwriting-home-page *ngIf="selectedPage.name === 'Background'"></app-songwriting-home-page>
       <app-songwriting-askevington *ngIf="selectedPage.name === 'Aske Vington'"></app-songwriting-askevington>
       <app-songwriting-redasruby *ngIf="selectedPage.name === 'Red As Ruby'"></app-songwriting-redasruby>
     
-    </div>
     </div>
     
 

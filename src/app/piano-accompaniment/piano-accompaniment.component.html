@@ -1,31 +1,34 @@
-<div class = "flew-column">
-     <div class = "flex-row">
-   
-   
-   
-         <div *ngFor="let Page of pages" (click)="onSelect(Page)"
-         [class.selected]="Page === selectedPage"
-         (click)="onSelect(Page)">
-         
-                 <div class="underlined-heading-wrapper">
-                   <span class="underlined-heading"> <span [class.selected]="Page === selectedPage">{{Page.name}}</span></span>
-   
-                 </div>
-         </div>
-   
-     </div>
-   <div class = "flex-row">
-     <div *ngIf="selectedPage">
-          <div>
-          
-               <app-pricing *ngIf="selectedPage.name === 'Pricing'"></app-pricing>
-               <app-piano-accompaniment-home *ngIf="selectedPage.name === 'Home'"></app-piano-accompaniment-home>
-          
-          </div>
-          </div>
-        
-           
-     <div *ngIf="!selectedPage">
-          <app-piano-accompaniment-home></app-piano-accompaniment-home>
-     
-   </div>
+<div class = "BerlinSans">
+<p> Alexandra holds a PGDip in Piano Performance from the Royal College of Music as well as having ARCM and LTCL diplomas and grade 8 piano with distinction. She has accompanied people for ABRSM exams up to Grade 8.
+</p>
+
+<audio controls>
+  <source src="./assets/audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+
+
+<table>
+     <tr>
+         <th>Grade</th>
+         <th>Prep Time (Mins)</th>
+         <th>Exam Time (Mins)</th>
+         <th>Price</th>
+     </tr>
+     <tr *ngFor="let price of prices">
+             <td>{{price.Grade}}</td>
+             <td>{{price.Prep}}</td>
+             <td>{{price.Exam}}</td>
+             <td>{{price.Price}}</td>   
+             
+     </tr>
+     </table>
+ 
+
+ 
+ 
+ 
+ 
+ 
+ </div>

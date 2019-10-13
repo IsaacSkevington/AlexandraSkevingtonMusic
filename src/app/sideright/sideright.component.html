@@ -1,0 +1,12 @@
+<div class = "BerlinSans">
+<h2>
+        News
+</h2>
+<div *ngFor="let item of NewsItems">
+<a href= {{item.link}}>
+<p>{{item.title}} {{item.description}}</p>
+
+<div class = "image"><img src = {{item.imagesrc}} alt = {{item.imagealttext}} [style.height.px]=item.imageheight [style.width.px]=item.imagewidth></div>
+</a>
+</div>
+</div>

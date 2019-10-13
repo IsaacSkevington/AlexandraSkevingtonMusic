@@ -1,7 +1,7 @@
 import { Page } from './page';
 
 export const PAGES: Page[] = [
-  {name: 'Home', location: '../instrumental-lessons-home'},
-  {name: 'Testimonials', location: '../testimonials'},
+  {name: 'My Teaching', display: 'Back to Instrumental Lessons', location: '../instrumental-lessons-home'},
+  {name: 'Testimonials', display:'Click For Testimonials', location: '../testimonials'},
 
 ];

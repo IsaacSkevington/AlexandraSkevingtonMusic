@@ -63,12 +63,7 @@ div{
 
 
 
-@font-face {
-  font-family: "Lovelo";
-  src: url("../../assets/Fonts/lovelo_black-webfont.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 600
-}
+
 
 .flex-row {
   display: flex;
@@ -133,4 +128,14 @@ span.selected {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+@font-face {
+  font-family: "BerlinSans";
+  src: url("./../../assets/Fonts/BRLNSR.TTF");
+  font-style: normal;
+  font-weight: 600
+}
+div.BerlinSans{
+  font-family: "BerlinSans";
 }
