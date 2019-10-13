@@ -56,7 +56,7 @@
 <div class="flex-rowbottom">
     <div *ngFor="let BottomMenuItem of BottomMenuItems" >
                   <div class="underlined-heading-wrapper">
-              <span class="underlined-heading"> <span [class.selected]="BottomMenuItem === selectedItem"><a class="bottommenulink" href={{BottomMenuItem.link}}>{{BottomMenuItem.name}}</a></span></span>
+              <span class="underlined-heading"><a class="bottommenulink" href={{BottomMenuItem.link}}>{{BottomMenuItem.name}}</a></span>
 
             </div>     
     </div>
