@@ -5,7 +5,7 @@ div.body{
   top:0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(white 0%, rgb(104, 104, 104) 100%);
+  background: linear-gradient(#d4af37 0%,rgb(194, 60, 60) 50%,grey 100%);
   overflow: auto
 
 }
@@ -121,6 +121,7 @@ div.flex-rowmain {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  padding: 0px;
 }
 
 div.flex-columnleft{
@@ -135,6 +136,14 @@ div.flex-columnmiddle{
   display: flex;
   justify-content: center;
   flex-basis: 70%;
+
+}
+
+div.flex-columnmiddlemain{
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+
 }
 
 div.flex-columnright{
@@ -157,31 +166,54 @@ div.flex-columntopmiddle{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-basis: 70%;
+  flex-basis: 90%;
+  padding: 2%;
+  padding-left: 7%;
+  padding-right:7%;
 }
 
 div.flex-columntopright{
   display: flex;
-  flex-basis: 15%;
+  flex-basis: 10%;
   justify-content: right;
-  padding: 0.5%;
+  padding-left: 0%;
 }
 div.flex-rowbottom{
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 100%;
   position: absolute;
-  bottom: 10px;
-  left: 35%;
+  bottom: -20%;
+  
   align-items: center;
   justify-content: space-around;
   padding-top: 1%;
   padding-bottom:0%;
   align-self: center
 }
+div.flex-columnbottommain{
+  display: flex;
+  flex-basis: 70%;
+  justify-content: center;
+  padding: 0.5%;
+}
+
 
 div.flexcolumnbottomenu{
 
+}
+div.flex-columnbottomleft{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: left;
+  padding: 0.5%;
+}
+
+div.flex-columnbottomright{
+  display: flex;
+  flex-basis: 15%;
+  justify-content: right;
+  padding: 0.5%;
 }
 
 
@@ -239,7 +271,7 @@ h2{
 
 
 div.sociallink{
-  padding:10px
+  padding:3px
 }
 
 a.bottommenulink{
@@ -253,11 +285,7 @@ div.copyright{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 20%;
   text-align: right;
-  position: absolute;
-  left: 80%;
-  bottom: 2px;
   font-size: 0.8vw;
   color: darkgray;  
   font-family: "Berlin-sans";
