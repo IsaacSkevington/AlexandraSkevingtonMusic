@@ -20,6 +20,7 @@ import { SiderightComponent } from './sideright/sideright.component';
 import { WritingComponent } from './writing/writing.component';
 import { WritingHomePageComponent } from './writing-home-page/writing-home-page.component';
 import { BandComponent } from './band/band.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BandComponent } from './band/band.component';
     SiderightComponent,
     WritingComponent,
     WritingHomePageComponent,
-    BandComponent
+    BandComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

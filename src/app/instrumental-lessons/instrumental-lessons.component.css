@@ -1,5 +1,7 @@
 div.fullwidth{
-  width: 100%;
+  width: 50%;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 
@@ -43,6 +45,7 @@ body {
      height: 100%;
      font-weight: 400;
      line-height: 0px;
+     /*word-wrap: break-word;*/
      }
 
 

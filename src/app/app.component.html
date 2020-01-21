@@ -37,10 +37,11 @@
 <div class = "flex-columnmiddlemain">
 <div *ngIf="selectedPage" class = "MainBody">
   <app-home-page *ngIf="selectedPage.name === 'Home Page'"></app-home-page>
-  <app-instrumental-lessons *ngIf="selectedPage.name === 'Instrumental Lessons'"></app-instrumental-lessons>
+  <app-instrumental-lessons *ngIf="selectedPage.name === 'Teaching'"></app-instrumental-lessons>
   <app-writing *ngIf="selectedPage.name === 'Composing'"></app-writing>
-  <app-piano-accompaniment *ngIf="selectedPage.name === 'Piano Accompaniment'"></app-piano-accompaniment>
-  <app-band *ngIf="selectedPage.name === 'Jazz Band Outreach'"></app-band>
+  <app-piano-accompaniment *ngIf="selectedPage.name === 'Accompanying'"></app-piano-accompaniment>
+  <app-band *ngIf="selectedPage.name === 'School Outreach (Jazz)'"></app-band>
+  <app-contact *ngIf="selectedPage.name === 'Contact Me'"></app-contact>
 </div>
 
 </div>
