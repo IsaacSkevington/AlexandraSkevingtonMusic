@@ -1,4 +1,9 @@
 <div class = "BerlinSans">
-<p> For over a decade, I have worked as a qualified primary school teacher in North London. I still continue to maintain this part of my professional life through occasional supply work. Additioanlly, I have taught practical music, theory and aural privately since leaving school.
+<p> For over a decade, I have worked as a qualified primary school teacher in North London. I still continue to maintain this part of my professional life through occasional supply work and am DBS checked. Additionally, I have taught practical music, theory and aural privately since leaving school.
 </p>
+<h2>Testimonials</h2>
+        <div class="testimonial" *ngFor="let Testimonial of Testimonials">
+            <p>{{Testimonial.person}} ({{Testimonial.instrument}}) - "{{Testimonial.body}}" </p>
+        </div>
+    
 </div>

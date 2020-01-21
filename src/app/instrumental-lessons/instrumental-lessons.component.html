@@ -4,7 +4,7 @@
   <div *ngIf="selectedPage">
     <div>
     
-      <app-testimonials style="width:100%" *ngIf="selectedPage.name === 'Testimonials'"></app-testimonials>
+    <!--  <app-testimonials style="width:100%" *ngIf="selectedPage.name === 'Testimonials'"></app-testimonials>-->
       <app-instrumental-lessons-home *ngIf="selectedPage.name === 'My Teaching'"></app-instrumental-lessons-home>
     
     </div>
@@ -21,7 +21,7 @@
 
 
 
-<div class = "flex-row2">
+<!--<div class = "flex-row2">
     <div *ngFor="let Page of pages" (click)="onSelect(Page)"
     [class.selected]="Page === selectedPage"
     (click)="onSelect(Page)">
@@ -33,6 +33,7 @@
     </div>
 
 </div>
+-->
 </div>
 
 
